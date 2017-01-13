@@ -1,0 +1,751 @@
+/*
+ * @author: marco torres
+ */
+
+@font-face {
+  font-family: 'Intro Head R Base';
+  src: url('../fonts/introheadr-base.eot');
+  src: url('../fonts/introheadr-base.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/introheadr-base.woff2') format('woff2'),
+  url('../fonts/introheadr-base.woff') format('woff'),
+  url('../fonts/introheadr-base.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Intro Rust G Base';
+  src: url('../fonts/introrustg-base2line.eot');
+  src: url('../fonts/introrustg-base2line.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/introrustg-base2line.woff2') format('woff2'),
+  url('../fonts/introrustg-base2line.woff') format('woff'),
+  url('../fonts/introrustg-base2line.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Opensans Semi Bold';
+  src: url('../fonts/opensans-semibold.eot');
+  src: url('../fonts/opensans-semibold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/opensans-semibold.woff2') format('woff2'),
+  url('../fonts/opensans-semibold.woff') format('woff'),
+  url('../fonts/opensans-semibold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Opensans Semi Bold Italic';
+  src: url('../fonts/opensans-semibolditalic.eot');
+  src: url('../fonts/opensans-semibolditalic.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/opensans-semibolditalic.woff2') format('woff2'),
+  url('../fonts/opensans-semibolditalic.woff') format('woff'),
+  url('../fonts/opensans-semibolditalic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  background: #fff;
+  font-family: "Montserrat Light", Arial, "Georgia", serif;
+  font-size: 12px;
+  line-height: 1.4em;
+  color: #141111;
+}
+
+a, 
+a:link, 
+a:visited, 
+a.visited {
+  color: #333;
+}
+
+a:hover, 
+a:active, 
+a:focus {
+  background-color: none !important;
+  outline: 0;
+  text-decoration: none;
+}
+
+/* Blockquote */
+
+blockquote {
+  background: #F8F8F8;
+  border-left: none;
+  font-size: 14px;
+  margin: 20px 0;
+  padding: 15px 5px;
+}
+
+blockquote .info-left {
+  font-family: 'Intro Head R Base';
+  font-size: 20px;
+  line-height: 22px;
+  text-transform: uppercase;
+}
+
+blockquote .info-right p {
+  font-size: 13px;
+  font-style: italic;
+  line-height: 18px;
+}
+
+img {
+  max-width: 100%;
+}
+
+input, 
+.form-control {
+  box-shadow: none;
+}
+
+.form-submit, 
+.form-reset {
+  border: 1px solid #E63A38;
+  border-radius: 3px;
+  background: #E63A38;
+  color: #fff;
+  font-size: 11px;
+  font-weight: normal;
+  height: 30px;
+  line-height: 10px;
+  margin: 0 2px;
+  padding: 8px 25px;
+  text-align: center;
+}
+
+.form-submit:hover, 
+.form-reset:hover {
+  background: #222222;
+  color: #fff;
+}
+
+/* Clearfix */
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+/* IE6 */
+* html .clearfix {
+  height: 1%;
+}
+/* IE7 */
+*:first-child + html .clearfix {
+  min-height: 1%;
+}
+
+/* Header */
+
+header {
+  background: #014382;
+  font-family: "Open Sans Condensed", Arial, "Georgia", serif;
+  height: 85px;
+}
+
+header h1 {
+  margin: 0;
+}
+
+header .navbar-brand {
+  padding: 0;
+}
+
+.navbar {
+  background: #014382;
+}
+
+/* Home */
+
+#partners h2 {
+  color: #757474;
+  font-family: "Open Sans Condensed", Arial, "Georgia", serif;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 5px;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* Owl Carousel */
+
+.owl-carousel {
+  position: relative;
+}
+
+#partners .owl-carousel .owl-wrapper-outer {
+  border-bottom: 1px solid #e4e4e4;
+  margin-left: 5%;
+  margin-right: 5%;
+  padding-bottom: 15px;
+  width: 90%;
+}
+
+.partners-carousel .item {
+  text-align: center;
+}
+
+.owl-prev, 
+.owl-next {
+  display: block;
+  filter: alpha(opacity=50);
+  font-size: 0;
+  height: 53px;
+  line-height: 0;
+  margin-top: -15px;
+  opacity: 0.5;
+  position: absolute;
+  text-indent: -9999px;
+  text-transform: capitalize;
+  top: 30%;
+  width: 53px;
+}
+
+.owl-prev {
+  background: url('../img/owl.carousel.png') no-repeat -120px 0;
+}
+
+.owl-next {
+  background: url('../img/owl.carousel.png') no-repeat -180px 0;
+  right: 0;
+}
+
+.owl-prev:hover, 
+.owl-prev:active, 
+.owl-prev:focus, 
+.owl-next:hover, 
+.owl-next:active, 
+.owl-next:focus {
+  filter: alpha(opacity=100);
+  opacity: 1;
+}
+
+.owl-prev:active, 
+.owl-prev:focus {
+  background-position: -240px 0;
+}
+
+.owl-next:active, 
+.owl-next:focus {
+  background-position: -300px 0;
+}
+
+/* Page Internal */
+
+.page-internal {
+  padding: 60px 0;
+}
+
+.page-internal h2.title {
+  color: #044082;
+  font-family: 'Intro Rust G Base';
+  font-size: 68px;
+  margin: 0 0 22px;
+}
+
+.page-internal h2.title span {
+  color: #fc3a00;
+  display: block;
+  font-family: 'Intro Head R Base';
+  font-size: 40px;
+  line-height: 10px;
+  margin-top: 20px;
+}
+
+#careers blockquote, 
+#graduates blockquote {
+  font-family: 'Intro Head R Base';
+  font-size: 30px;
+  line-height: 30px;
+  padding: 40px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#information blockquote {
+  background: transparent;
+  font-family: 'Intro Head R Base';
+  font-size: 30px;
+  line-height: 30px;
+  padding: 40px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.internal-block {
+  border: 1px solid #e5e5e5;
+  float: left;
+  height: 160px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  max-height: 160px;
+  padding: 20px;
+  position: relative;
+  width: 48.5%;
+}
+
+#careers .internal-block, 
+#graduates .internal-block {
+  height: 220px;
+  max-height: 220px;
+}
+
+.internal-block-left {
+  clear: both;
+  margin-right: 1.5%;
+}
+
+.internal-block-right {
+  margin-left: 1.5%;
+}
+
+.internal-block h3 {
+  color: #fc3a00;
+  font-family: 'Open Sans Condensed';
+  font-size: 35px;
+  font-weight: 600;
+  margin-top: 0;
+  text-transform: uppercase;
+}
+
+#careers .internal-block h3, 
+#graduates .internal-block h3 {
+  font-size: 20px;
+}
+
+.internal-block p {
+  color: #4d4d4d;
+  font-style: italic;
+}
+
+.internal-block em {
+  bottom: 20px;
+  color: #fc3a00;
+  font-family: 'Open Sans Condensed';
+  font-size: 40px;
+  font-weight: 600;
+  right: 20px;
+  position: absolute;
+}
+
+.internal-block-bg {
+  background: url('../img/background_block_internal.png') no-repeat 0 0;
+  background-size: cover;
+}
+
+.internal-block-bg h3, 
+.internal-block-bg p {
+  color: #fff;
+}
+
+.block-form {
+  background: #E1E1E1;
+  padding: 20px;
+  /*position: fixed;
+  top: 160px;*/
+}
+
+.block-form h3 {
+  color: #044082;
+  font-family: 'Open Sans Condensed';
+  font-size: 34px;
+  margin-bottom: 5px;
+  margin-top: 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.block-form h3 span {
+  color: #fc3a00;
+  font-size: 23px;
+  font-weight: 600;
+}
+
+.block-form p {
+  color: #232121;
+  font-style: italic;
+  text-align: center;
+}
+
+.block-form input[type="text"], 
+.block-form input[type="email"], 
+.block-form input[type="tel"] {
+  border: none;
+  border-radius: 0;
+  font-size: 12px;
+}
+
+.block-form input[type="checkbox"] {
+   opacity: 0;
+}
+
+.block-form .checkbox label {
+  background: url('../img/form_checks.png') no-repeat 0 3px;
+  color: #878787;
+  margin-left: 15px;
+  min-height: 26px;
+  padding-left: 30px;
+}
+
+.block-form .checkbox label.active, 
+.block-form .checkbox input[type="checkbox"]:checked ~ label {
+  background: url('../img/form_checks.png') no-repeat 0 -57px;
+}
+
+.block-form .form-actions {
+  margin-bottom: 0;
+}
+
+.block-form input[type="submit"], 
+.btn-button {
+  border: none;
+  border-radius: 0;
+  background: #fc3a00;
+  color: #fff !important;
+  font-family: 'Open Sans Condensed';
+  font-size: 23px;
+  font-weight: 600;
+  height: 40px;
+  line-height: 10px;
+  margin: 0;
+  padding: 8px 25px;
+  text-align: center;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+.form-group {
+  margin: 15px 0;
+}
+
+.form-group label.error {
+  float: right;
+}
+
+/* Confirmation */
+
+#confirmation {
+  background: url('../img/img_confirmation.png') no-repeat 0 0;
+  background-size: cover;
+  padding: 150px 15px;
+  text-align: center;
+}
+
+#confirmation h2.title {
+  font-family: 'Intro Rust G Base';
+  color: #fff;
+  font-size: 115px;
+  margin-bottom: 25px;
+}
+
+#confirmation p {
+  color: #fff;
+  font-family: 'Open Sans Condensed';
+  font-size: 28px;
+  line-height: 28px;
+}
+
+#confirmation .btn-button {
+  font-size: 28px;
+  font-weight: normal;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+/* Footer */
+
+.footer-block {
+  padding-bottom: 20px;
+  padding-top: 48px;
+}
+
+#footer-block-phone {
+  background: url('../img/phone.png') no-repeat 80px 6px;
+  padding-top: 40px;
+}
+
+.footer-block-content {
+  background: url('../img/quater.png') no-repeat 0 2px;
+  padding-left: 20px;
+}
+
+#footer-block-phone .footer-block-content {
+  background-position: 0 10px;
+}
+
+.footer-block-content h3 {
+  font-family: "Open Sans Condensed", Arial, "Georgia", serif;
+  margin-top: 0;
+}
+
+#footer-block-phone h3 {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+#footer-block-social h3 {
+  font-size: 17px;
+  font-weight: 700;
+}
+
+#footer-block-phone h3 span {
+  color: #fc3a00;
+  font-size: 33px;
+  font-style: italic;
+  font-weight: normal;
+}
+
+.footer-block-content p {
+  font-size: 11px;
+  font-style: italic;
+}
+
+#copyright {
+  background: #222222;
+  color: #9d9d9d;
+  padding: 20px 0 15px;
+  text-align: center;
+}
+select {
+    width: 330px;
+    padding: 6px 0px;
+    border: none;
+    color: rgba(128, 128, 128, 0.81);
+}
+
+@media only screen and (min-width : 767px) {
+  .navbar-nav {
+    display: block;
+    float: right;
+  }
+  .navbar-nav > li {
+    display: inline-block;
+    float: none;
+  }
+  .navbar-nav > li > a {
+    color: #ccc;
+    display: inline-block;
+    float: none;
+    font-size: 16px;
+    height: 85px;
+    padding: 30px 20px;
+  }
+  .navbar-nav > li:last-child a {
+    padding-right: 0;
+  }
+  .navbar-nav > li a.active, 
+  .navbar-nav > li.active a, 
+  .navbar-nav > li a:hover, 
+  .navbar-nav > li a:active, 
+  .navbar-nav > li a:focus {
+    background: url('../img/hover.png') no-repeat 0 16px;
+    color: #fff !important;
+  }
+}
+
+@media only screen and (max-width : 767px) {
+  .container-fluid > .navbar-collapse, 
+  .container-fluid > .navbar-header, 
+  .container > .navbar-collapse, 
+  .container > .navbar-header {
+    background: rgba(1, 67, 130, 1) !important;
+    height: 85px;
+  }
+  .navbar-collapse {
+    border-top: none;
+  }
+  header .navbar-brand {
+    margin-left: 15px;
+  }
+  .navbar-toggle {
+    margin-bottom: 14px;
+    margin-top: 14px;
+  }
+  .navbar-toggle .icon-bar {
+    background-color: #FE4500 !important;
+    height: 4px;
+    width: 25px;
+  }
+  .navbar-default .navbar-toggle:hover, 
+  .navbar-default .navbar-toggle:focus {
+    background-color: #FFF !important;
+  }
+  .navbar-default .navbar-toggle {
+    background: transparent;
+    border: none;
+    margin: 0;
+  }
+  .navbar {
+    background: none;
+  }
+  .navbar-fixed-top .navbar-collapse, 
+  .navbar-fixed-bottom .navbar-collapse {
+    background: rgba(1, 67, 130, 0.7) !important;
+    float: right;
+    max-height: none;
+    padding-left: 0;
+    padding-right: 0;
+    width: 60%;
+  }
+  .navbar-nav {
+    margin: 0 !important;
+  }
+  .navbar .menu {
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .nav > li {
+    border-bottom: 1px solid #0054A7;
+  }
+  .nav > li a {
+    color: #ccc;
+    font-size: 20px;
+    padding-left: 35px;
+  }
+  .nav > li a.active, 
+  .nav > li.active a, 
+  .nav > li a:hover, 
+  .nav > li a:active, 
+  .nav > li a:focus {
+    background: url('../img/hover.png') no-repeat 15px -4px;
+    color: #fff !important;
+  }
+  .owl-carousel .owl-wrapper-outer {
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
+  }
+  .page-internal {
+    padding: 30px 0;
+  }
+  .page-internal h2.title {
+    margin-bottom: 0;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  blockquote {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  .internal-block {
+    height: auto;
+    margin-left: 2%;
+    margin-right: 2%;
+    max-height: none;
+    min-height: 160px;
+    width: 46%;
+  }
+  select {
+    width: 290px;
+    padding: 6px 0px;
+    border: none;
+    color: rgba(128, 128, 128, 0.81);
+    background: #fff;
+  }
+  .block-form {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  #confirmation {
+    padding: 50px 15px;
+  }
+  #confirmation h2.title {
+    font-size: 80px;
+    margin-bottom: 25px;
+  }
+  #information h2.title {
+    font-size: 60px !important;
+    line-height: 70px;
+  }
+  .footer-block-content p {
+    font-size: 14px;
+  }
+  #footer-block-info {
+    padding-top: 0;
+  }
+  #footer-block-social {
+    padding-bottom: 40px;
+    padding-top: 0;
+  }
+}
+
+@media only screen and (max-width : 600px) {
+  .internal-block {
+    float: none;
+    height: auto;
+    margin-left: 3%;
+    margin-right: 3%;
+    max-height: none;
+    min-height: 160px;
+    width: 94%;
+  }
+  #confirmation h2.title {
+    font-size: 65px;
+  }
+  #careers h2.title, 
+  #graduates h2.title {
+    font-size: 60px !important;
+  }
+  #information h2.title {
+    font-size: 53px !important;
+    line-height: 65px;
+  }
+}
+
+@media only screen and (max-width : 450px) {
+  #careers h2.title, 
+  #graduates h2.title {
+    font-size: 50px !important;
+    line-height: 60px;
+  }
+  #information h2.title {
+    font-size: 45px !important;
+    line-height: 55px;
+  }
+  .navbar-nav > li:last-child > a {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width : 400px) {
+  header, 
+  .container-fluid > .navbar-collapse, 
+  .container-fluid > .navbar-header, 
+  .container > .navbar-collapse, 
+  .container > .navbar-header {
+    height: 75px;
+  }
+  .navbar-brand > img {
+    padding-right: 0 !important;
+    margin-top: 5px;
+  }
+  #confirmation h2.title {
+    font-size: 50px;
+    margin-bottom: 25px;
+  }
+  .page-internal h2.title {
+    font-size: 45px !important;
+    line-height: 60px;
+  }
+  #graduates h2.title {
+    font-size: 40px !important;
+    line-height: 50px;
+  }
+  #information h2.title {
+    font-size: 40px !important;
+    line-height: 50px;
+  }
+  #confirmation .btn-button {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}

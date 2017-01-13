@@ -1,0 +1,224 @@
+<!DOCTYPE>
+<html>
+	<head>
+		<title>ETI | SENATI</title>
+		<meta charset="utf-8">
+		<!-- Responsiveness -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+		<link rel="stylesheet" type="text/css" href="stylesheets/main.css">
+		<link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+    <link rel="shortcut icon" href="img/favicon-32x32.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+	</head>
+	<body>
+  <script type="text/javascript" src="javascripts/jssor.slider-21.1.5.min.js"></script>
+    <!-- use jssor.slider-21.1.5.debug.js instead for debug -->
+    <script>
+        jssor_1_slider_init = function() {
+            
+            var jssor_1_options = {
+              $AutoPlay: true,
+              $AutoPlaySteps: 1,
+              $SlideDuration: 160,
+              $SlideWidth: 200,
+              $SlideSpacing: 3,
+              $Cols: 4,
+              $ArrowNavigatorOptions: {
+                $Class: $JssorArrowNavigator$,
+                $Steps: 1
+              },
+              $BulletNavigatorOptions: {
+                $Class: $JssorBulletNavigator$,
+                $SpacingX: 1,
+                $SpacingY: 1
+              }
+            };
+            
+            var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+            
+            //responsive code begin
+            //you can remove responsive code if you don't want the slider scales while window resizing
+            function ScaleSlider() {
+                var refSize = jssor_1_slider.$Elmt.parentNode.clientWidth;
+                if (refSize) {
+                    refSize = Math.min(refSize, 1200);
+                    jssor_1_slider.$ScaleWidth(refSize);
+                }
+                else {
+                    window.setTimeout(ScaleSlider, 30);
+                }
+            }
+            ScaleSlider();
+            $Jssor$.$AddEvent(window, "load", ScaleSlider);
+            $Jssor$.$AddEvent(window, "resize", ScaleSlider);
+            $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
+            //responsive code end
+        };
+    </script>
+
+    <style>
+        
+        /* jssor slider bullet navigator skin 03 css */
+        /*
+        .jssorb03 div           (normal)
+        .jssorb03 div:hover     (normal mouseover)
+        .jssorb03 .av           (active)
+        .jssorb03 .av:hover     (active mouseover)
+        .jssorb03 .dn           (mousedown)
+        */
+        .jssorb03 {
+            position: absolute;
+        }
+        .jssorb03 div, .jssorb03 div:hover, .jssorb03 .av {
+            position: absolute;
+            /* size of bullet elment */
+            width: 21px;
+            height: 21px;
+            text-align: center;
+            line-height: 21px;
+            color: white;
+            font-size: 12px;
+            background: url('img/b03.png') no-repeat;
+            overflow: hidden;
+            cursor: pointer;
+        }
+
+        /* jssor slider arrow navigator skin 03 css */
+        /*
+        .jssora03l                  (normal)
+        .jssora03r                  (normal)
+        .jssora03l:hover            (normal mouseover)
+        .jssora03r:hover            (normal mouseover)
+        .jssora03l.jssora03ldn      (mousedown)
+        .jssora03r.jssora03rdn      (mousedown)
+        */
+        .jssora03l, .jssora03r {
+            display: block;
+            position: absolute;
+            /* size of arrow element */
+            width: 55px;
+            height: 55px;
+            cursor: pointer;
+            background: url('img/a03.png') no-repeat;
+            overflow: hidden;
+        }
+        .jssora03l { background-position: 3px -50px; }
+        .jssora03r { background-position: -63px -50px; }
+        .jssora03l:hover { background-position: -118px -50px; }
+        .jssora03r:hover { background-position: -183px -50px; }
+    </style>
+    <!-- INICIO DEL MENU-->
+		<header>
+			<nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid menu">
+          <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>                        
+            </button>
+            <span><a class="navbar-brand" href="http://www.senati.edu.pe/web/" target="_blank"><img class="logo" src="img/logo.png"></a></span>
+          </div>
+          <div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="">HOME</a></li>
+                <li><a href="">LA ESCUELA</a></li>
+                <li><a href="">CARRERAS</a></li>
+                <li><a href="">DIPLOMADOS</a></li>
+                <li><a href="">SOLICITAR INFORMACIÓN</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+		</header>
+    <!-- INICIO DEL HOME -->
+    <div id="home" class="home"> 
+    </div>
+    <!-- INICIO DEL PARTNERS -->
+    <div class="partners">
+      <h2>PARTNERS ESTRATÉGICOS</h2>
+      <div id="jssor_1" style="position: relative; margin: 0 auto; top: 0px; left: 0px; max-width: 1200px; height: 150px; overflow: hidden; visibility: hidden;">
+      <!-- Loading Screen -->
+        <div data-u="slides" class="slider">
+          <div style="display: none;" style="width:100%, height=100%">
+            <a href="http://www.somark.pe/" target="_blank"><img src="img/partners_01.png"/></a>
+          </div>
+          <div style="display: none;" style="width:100%, height=100%">
+            <a href="http://www.somark.pe/" target="_blank"><img src="img/partners_02.png"/></a>
+          </div>
+          <div style="display: none;" style="width:100%, height=100%">
+            <a href="http://www.somark.pe/" target="_blank"><img src="img/partners_03.png"/></a>
+          </div>
+          <div style="display: none;" style="width:100%, height=100%">
+            <a href="http://www.somark.pe/" target="_blank"><img src="img/partners_04.png"/></a>
+          </div>
+          <div style="display: none;" style="width:100%, height=100%">
+            <a href="http://www.somark.pe/" target="_blank"><img style="width:100%, height=100%" src="img/partners_05.png"/></a>
+          </div>
+          <div style="display: none;" style="width:100%, height=100%">
+            <a href="http://www.somark.pe/" target="_blank"><img style="width:100%, height=100%" src="img/partners_06.png"/></a>
+          </div>
+          <div style="display: none;" style="width:100%, height=100%">
+            <a href="http://www.somark.pe/" target="_blank"><img style="width:100%, height=100%" src="img/partners_07.png"/></a>
+          </div>
+          <div style="display: none;" style="width:100%, height=100%">
+            <a href="http://www.somark.pe/" target="_blank"><img style="width:100%, height=100%" src="img/partners_08.png"/></a>
+          </div>
+        </div>
+          <!-- Arrow Navigator -->
+          <span data-u="arrowleft" class="jssora03l" style="top:0px;left:8px;width:55px;height:55px;" data-autocenter="2"></span>
+          <span data-u="arrowright" class="jssora03r" style="top:0px;right:8px;width:55px;height:55px;" data-autocenter="2"></span>
+      </div>
+    </div>
+    <!-- INICIO DEL FOOTER -->
+  <footer>
+    <div class="row footer">
+      <div class="col-md-4 col-xs-12">
+        <div class="telefon">
+          <img class="cuadrado" src="img/caudrado-1.png" alt="SENATI">
+          <div class="texto">
+            <h1>CENTRAL <br> TELEFÓNICA:</h1><img src="img/phone.png">
+            <h1 style="font-style: italic;color: #fc3a00;position: absolute;top: 21px;left: 145px;">0 801 111 00</h1>
+            <p>Línea gratuita a nivel nacional.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-xs-12">
+        <div class="texto-footer">
+          <img class="cuadrado" src="img/cuadrado-2.png" alt="SENATI">
+          <div class="texto1">
+            <p>Sé un SENATINO, porque construir<br> con sus manos el futuro de la industria<br> se ha convertido en una leyenda de la <br>que todos hablan. <br><br>
+            SENATI, el futuro está en nuestras manos...</p>
+        </div>
+      </div>
+      <p class="derechos">Todos los derechos reservados © SENATI 2016</p>
+      </div>  
+      <div class="col-md-4 col-xs-12">
+        <div class="contact">
+          <img class="cuadrado" src="img/caudrado-1.png" alt="SENATI">
+          <div class="redes">
+            <h3>SÍGUENOS EN:</h3>
+            <div class="red">
+              <a href="https://www.facebook.com/SenatiOficial" target="_blank"><img class="facebook" src="img/facebook-negro.png" alt="SENATI"></a>
+              <a href="https://twitter.com/SENATI_PERU" target="_blank"><img class="facebook" src="img/twitter-negro.png" alt="SENATI"></a>
+              <a href="https://www.linkedin.com/company/senati" target="_blank"><img class="facebook" src="img/linkedin-negro.png" alt="SENATI"></a>
+              <a href="https://www.youtube.com/channel/UCpn2nxDW4-O_2uTJr-ygJ1A" target="_blank"><img class="facebook" src="img/youtube-negro.png" alt="SENATI"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+    <script>
+        jssor_1_slider_init();
+    </script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+		<!-- Javascripts de Bootstrap -->
+		<script src="javascripts/js.js"></script>
+		<script src="javascripts/b3/collapse.js"></script>
+		<script src="javascripts/b3/transition.js"></script>
+		
+	</body>	
+</html>	
